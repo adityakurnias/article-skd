@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #673F69;
+  
+}
+
+main {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Navbar */
+
+header {
+  padding-left: 15%;
+  padding-right: 15%;
+  position: sticky;
+  top: 0;
+  box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.75);
+}
+
+nav {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  backdrop-filter: blur(5px);
+  justify-content: space-between;
+}
+
+.judul h2 {
+  color: #eee;
+  font-size: 1.2rem;
+}
+
+nav img {
+  width: 40px;
+}
+
+.link {
+  padding: 8px;
+  color: #EEEEEE;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+.judul {
+  display: flex;
+  align-items: center;
+}
+
+/* NEws */
+
+.new {
+  width: 100%;
+  border-radius: 30px;
+  border: 1px solid;
+  display: flex;
+  color: #eee;
+}
+
+.content {
+  width: 100%;
+  display: flex;
+  color: #eaeaea;
+  margin: 1rem;
+  align-items: center;
+}
+
+.berita a {
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: #eee;
+}
+
+.content aside {
+  height: 100px;
+  align-content: center;
+}
+
+.content aside div {
+  font-size: 12px;
+  word-break: break-all;
+}
+
+.thumbnail {
+  width: 240px;
+  margin-right: 10px;
+}
+
+.content img{
+  width: 100%;
+}
