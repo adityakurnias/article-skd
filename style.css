@@ -61,42 +61,31 @@ nav img {
 /* NEws */
 
 .new {
-  width: 100%;
-  border-radius: 30px;
+  padding: 1rem;
+  margin: 1rem;
   border: 1px solid;
-  display: flex;
-  color: #eee;
 }
 
 .content {
-  width: 100%;
+  color: #eee;
   display: flex;
-  color: #eaeaea;
-  margin: 1rem;
   align-items: center;
+  border-bottom: 0.1px solid #eee;
+
+}
+
+.content aside {
+  width: 100%;
+}
+
+.thumbnail {
+  width: 120px;
+  border-radius: 20px;
+  margin: 10px;
 }
 
 .berita a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: #eee;
-}
-
-.content aside {
-  height: 100px;
-  align-content: center;
-}
-
-.content aside div {
-  font-size: 12px;
-  word-break: break-all;
-}
-
-.thumbnail {
-  width: 240px;
-  margin-right: 10px;
-}
-
-.content img{
-  width: 100%;
 }
