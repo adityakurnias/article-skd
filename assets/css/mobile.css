@@ -5,25 +5,24 @@
 }
 
 body {
-  background-color: #272829;
-  
+  background-color: #272829; 
 }
 
 main {
   width: 100%;
   display: flex;
-  flex-direction: column;
   margin-left: auto;
   margin-right: auto;
+  flex-direction: column;
 }
 
 /* Navbar */
 
 header {
+  top: 0;
   padding-left: 0;
   padding-right: 0;
   position: sticky;
-  top: 0;
   box-shadow: 0px 0px 30px -15px rgba(0,0,0,0.75);
 }
 
@@ -47,6 +46,10 @@ nav img {
   width: 45px;
 }
 
+.link-con {
+  display: flex;
+}
+
 .link {
   padding: 8px;
   color: #D8D9DA;
@@ -54,26 +57,32 @@ nav img {
   text-decoration: none;
 }
 
-.more {
-  position: fixed;
-  background: #D8D9DA;
+.drop {
   display: flex;
   flex-direction: column;
-  padding: 0;
-  right: 10px;
-  height: 0;
-  overflow: hidden;
 }
 
-#lain:hover .more {
-  height: 100px;
+.more {
+  height: 0;
+  top: 50px;
+  padding: 0;
+  right: 15px;
+  display: flex;
+  overflow: hidden;
+  position: absolute;
+  background: #D8D9DA;
+  flex-direction: column;
+  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.30, 1);
+}
+
+.drop:hover .more {
+  padding: 6px;
+  height: max-content;
 }
 
 .more-link {
-  text-decoration: none;
   color: #272829;
-  font-size: 1.2rem;
-  margin-block: 4px;
+  text-decoration: none;
 }
 
 .judul {
@@ -87,53 +96,53 @@ nav img {
 .new {
   padding: 1rem;
   margin: 1rem;
-  border: 0.5px solid #D8D9DA;
   border-radius: 15px;
+  border: 0.5px solid #D8D9DA;
 }
 
 .sect-title {
-  color: #D8D9DA;
   font-size: 2rem;
+  color: #D8D9DA;
   font-weight: bold;
 }
 
 .content {
   display: flex;
-  align-items: center;
   margin: 0 0 10px 0;
+  align-items: center;
 }
 
 .content aside {
   width: 100%;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
 }
 
 .content a {
-  text-decoration: none;
   color: #D8D9DA;
+  text-decoration: none;
 }
 
 .thumbnail {
   width: 120px;
-  border-radius: 15px;
   margin: 10px;
+  border-radius: 15px;
 }
 
 span.berita {
-  text-decoration: none;
-  font-size: 1.6rem;
-  color: #D8D9DA;
-  display: block;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
   width: 100%; 
+  display: block;
+  overflow: hidden;
+  color: #D8D9DA;
+  font-size: 1.6rem;
   font-weight: bold;
+  white-space: nowrap;
+  text-decoration: none;
+  text-overflow: ellipsis;
 }
 
 .desk {
-  text-overflow: ellipsis;
-  white-space: nowrap;
   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
