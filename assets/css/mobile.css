@@ -1,16 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "EB Garamond", serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #272829;
+  background-color: #222;
 }
 
 main {
   width: 100%;
   display: flex;
+  padding: 1rem;
   margin-left: auto;
   margin-right: auto;
   flex-direction: column;
@@ -37,12 +41,8 @@ nav {
   justify-content: space-between;
 }
 
-.alquran img {
-  width: 100%;
-}
-
 .judul h2 {
-  color: #d8d9da;
+  color: #FAEBCD;
   font-size: 1.2rem;
 }
 
@@ -56,7 +56,7 @@ nav img {
 
 .link {
   padding: 8px;
-  color: #d8d9da;
+  color: #FAEBCD;
   font-size: 1.2rem;
   text-decoration: none;
 }
@@ -66,25 +66,32 @@ nav img {
   flex-direction: column;
 }
 
-.more {
-  height: 0;
+.wrapper {
   top: 50px;
   width: auto;
+  height: auto;
   display: flex;
+  max-height: 0;
   overflow: hidden;
   position: absolute;
-  padding: 0 6px 0 6px;
-  background: #d8d9da;
+  align-items: center;
+  border-radius: 10px;
+  background: #FAEBCD;
   flex-direction: column;
-  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.drop:hover .more {
-  height: auto;
+.wrapper a {
+  padding: 10px;
+}
+
+.drop:hover .wrapper {
+  max-height: 150px;
 }
 
 .more-link {
-  color: #272829;
+  color: #222;
   padding: 6px;
   text-decoration: none;
 }
@@ -101,12 +108,12 @@ nav img {
   margin: 1rem;
   padding: 1rem;
   border-radius: 15px;
-  border: 0.5px solid #d8d9da;
+  border: 0.5px solid #faebcd7e;
 }
 
 .sect-title {
   font-size: 2rem;
-  color: #d8d9da;
+  color: #FAEBCD;
   font-weight: bold;
 }
 
@@ -123,7 +130,7 @@ nav img {
 }
 
 .content a {
-  color: #d8d9da;
+  color: #FAEBCD;
   text-decoration: none;
 }
 
@@ -137,7 +144,7 @@ span.berita {
   width: 100%;
   display: block;
   overflow: hidden;
-  color: #d8d9da;
+  color: #FAEBCD;
   font-size: 1.6rem;
   font-weight: bold;
   white-space: nowrap;

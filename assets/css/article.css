@@ -1,15 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
+  font-family: "EB Garamond", serif;
   box-sizing: border-box;
 }
 
 body {
-  background-color: #272829;
+  background-color: #222;
 }
 
 main {
   width: 100%;
+  padding: 1rem;
   display: flex;
   margin-left: auto;
   margin-right: auto;
@@ -37,8 +41,9 @@ nav {
   justify-content: space-between;
 }
 
+
 .judul h2 {
-  color: #d8d9da;
+  color: #FAEBCD;
   font-size: 1.2rem;
 }
 
@@ -52,9 +57,13 @@ nav img {
 
 .link {
   padding: 8px;
-  color: #d8d9da;
+  color: #FAEBCD;
   font-size: 1.2rem;
   text-decoration: none;
+}
+
+.link:hover {
+  cursor: pointer;
 }
 
 .drop {
@@ -62,25 +71,33 @@ nav img {
   flex-direction: column;
 }
 
-.more {
-  height: 0;
+.wrapper {
   top: 50px;
-  padding: 0;
+  width: auto;
+  height: auto;
   display: flex;
+  max-height: 0;
   overflow: hidden;
   position: absolute;
-  background: #d8d9da;
+  align-items: center;
+  border-radius: 10px;
+  background: #FAEBCD;
   flex-direction: column;
-  transition: all 0.5s cubic-bezier(0.165, 0.84, 0.3, 1);
+  justify-content: center;
+  transition: all 0.5s cubic-bezier(0.39, 0.575, 0.565, 1);
 }
 
-.drop:hover .more {
-  padding: 6px;
-  height: max-content;
+.wrapper a {
+  padding: 10px;
+}
+
+.drop:hover .wrapper {
+  max-height: 150px;
 }
 
 .more-link {
-  color: #272829;
+  color: #222;
+  padding: 6px;
   text-decoration: none;
 }
 
@@ -88,4 +105,81 @@ nav img {
   padding: 8px;
   display: flex;
   align-items: center;
+}
+
+/* Content */
+
+.parent {
+  display: flex;
+  flex-direction: column;
+}
+
+.div1 {
+  margin: 1rem;
+  color: #FAEBCD;
+  text-align: center;
+}
+
+.profile {
+  margin: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.div2 {
+  display: flex;
+  align-items: center;
+}
+
+.div2 span {
+  margin: 8px;
+  color: #FAEBCD;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.div2 img, .div3 img {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.thumbnail img{
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 20px;
+}
+
+.content {
+  color: #FAEBCD;
+  font-size: 1.3rem;
+  letter-spacing: 1px;
+}
+
+.content h2 {
+  margin: 1rem;
+  text-align: center;
+}
+
+.content ol {
+  padding-left: 1.6rem;
+}
+
+.ad {
+  margin-left: auto;
+  margin-right: auto;
+  bottom: 0;
+  position: sticky;
+}
+
+@media screen and (min-width: 1000px) {
+  .div1 h1 {
+    font-size: 2.3rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .div2 img, .div3 img {
+    width: 30px;
+  }
 }
